@@ -1,5 +1,4 @@
 #!/bin/sh
 
-JOIN=$1
-docker run -d -p 80:80 -p 9999:9999 -v `pwd`:/docker-serf -e JOIN="$JOIN" -e TAGS="-tag role=lb" haproxy
+docker run -d -p 81:80 -p 443:443 -p 9999:9999 -v `pwd`/etc/haproxy.cfg:/etc/haproxy.cfg haproxy
 
