@@ -3,4 +3,4 @@
 #sv start socklog-unix || exit 1
 
 exec 2>&1
-exec /usr/local/sbin/haproxy -d -f /etc/haproxy.cfg
+exec /usr/local/sbin/haproxy -db -f /etc/haproxy.cfg
