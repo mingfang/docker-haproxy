@@ -20,7 +20,7 @@ RUN apt-get install -y vim less net-tools inetutils-ping curl git telnet nmap so
 #HAProxy
 RUN apt-get build-dep -y haproxy
 RUN apt-get install -y libssl-dev
-RUN curl http://www.haproxy.org/download/1.5/src/haproxy-1.5.1.tar.gz | tar xz
+RUN curl http://www.haproxy.org/download/1.5/src/haproxy-1.5.2.tar.gz | tar xz
 RUN mv haproxy-* haproxy
 RUN cd haproxy && \
     make TARGET="linux26" USE_STATIC_PCRE=1 USE_OPENSSL=1 && \
