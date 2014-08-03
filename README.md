@@ -1,4 +1,4 @@
 docker-haproxy
 ==============
 
-Run Serf enabled HAProxy inside Docker
+Run HAProxy inside Docker
